@@ -47,7 +47,7 @@ jobs:
         run: |
           set -euxo pipefail
 
-          CONFIG_FILE=".config/pow"
+          CONFIG_FILE=".config/ai"
           if [ -f "$CONFIG_FILE" ]; then
             # 1. Map keys to GITHUB_ENV for general use (e.g. $FEDORA_VERSION)
             jq -r '.arguments | to_entries[] | "\(.key)=\(.value)"' "$CONFIG_FILE" >> $GITHUB_ENV
