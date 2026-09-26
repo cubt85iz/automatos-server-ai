@@ -1,0 +1,35 @@
+{
+  "arguments": {
+    "CONFIG": "ai",
+    "DEBUG": "false",
+    "FEDORA_VERSION": "44",
+    "NVIDIA_TAG": "-nvidia-open",
+    "ROOT": "core"
+  },
+  "containers": [
+    "",
+  ],
+  "packages": [
+    "borgbackup",
+    "https://github.com/twpayne/chezmoi/releases/download/v2.58.0/chezmoi-2.58.0-x86_64.rpm",
+    "curl",
+    "dbus-tools",
+    "firewalld",
+    "just",
+    "kernel-modules-extra",
+    "nano",
+    "pciutils",
+    "podman",
+    "rclone"
+  ],
+  "repos": [],
+  "selinux":
+  {
+    "booleans": [
+      {
+        "name": "rsync_full_access",
+        "value": "1"
+      }
+    ]
+  }
+}
