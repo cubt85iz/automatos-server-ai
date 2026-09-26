@@ -7,7 +7,7 @@
     "ROOT": "core"
   },
   "containers": [
-    "",
+    "open-webui"
   ],
   "packages": [
     "borgbackup",
